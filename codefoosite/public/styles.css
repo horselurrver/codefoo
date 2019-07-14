@@ -1,0 +1,41 @@
+body {
+  font-family: 'Work Sans', sans-serif;
+  padding: 1em;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+}
+
+.sidebar {
+  display: flex;
+  flex-direction: column;
+}
+
+.sidebar-item {
+  display: flex;
+  width: 25em;
+  padding: 0.8em;
+  color: grey;
+  border-radius: 0.4em;
+}
+
+.active {
+  background-color: #a5271f;
+  color: white;
+}
+
+.sidebar-item:hover {
+  color: white;
+  background-color: lightgrey;
+  cursor: pointer;
+}
+
+.sidebar-item i {
+  margin-top: 1em;
+}
+
+.sidebar-item h3 {
+  margin-left: 1em;
+}
