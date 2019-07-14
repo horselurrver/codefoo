@@ -3,14 +3,23 @@ body {
   padding: 1em;
 }
 
-.container {
+.container, .list-item {
   display: flex;
   flex-direction: row;
 }
 
-.sidebar {
+.list-item {
+  width: 50em;
+}
+
+.sidebar, .list {
   display: flex;
   flex-direction: column;
+}
+
+.list img {
+  margin: 1em;
+  border-radius: 0.5em;
 }
 
 .sidebar-item {
@@ -38,4 +47,18 @@ body {
 
 .sidebar-item h3 {
   margin-left: 1em;
+}
+
+.hidden {
+  visibility: hidden;
+}
+
+.list-item img:hover {
+  opacity: 0.5;
+}
+
+.list-item h2:hover {
+  color: blue;
+  text-decoration: underline;
+  cursor: pointer;
 }

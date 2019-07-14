@@ -14,5 +14,14 @@
       <i class="far fa-file-alt fa-lg"></i>
       <h3>Articles</h3>
     </div>
+
+  </div>
+  <div class="list">
+    {{#each data}}
+    <div class="list-item {{this.contentType}} hidden" >
+      <img src="{{this.thumbnails.0.url}}"/>
+      <h2>{{this.metadata.title}}</h2>
+    </div>
+    {{/each}}
   </div>
 </div>

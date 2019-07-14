@@ -8,10 +8,13 @@ router.get('/',(req, res) => {
   axios.get('https://ign-apis.herokuapp.com/content')
   .then(response => {
     console.log(response.data.data);
-    res.render('home.hbs');
+    res.render('home.hbs', {
+      data: response.data.data
+    });
   })
   .catch(error => {
     console.log(error);
   });
 });
+
 module.exports = router;
